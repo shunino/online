@@ -1,0 +1,230 @@
+.consulting-info {
+  background: #fff;
+}
+
+.consulting {
+  height: 100%;
+}
+
+.consulting .consulting-content {
+  position: fixed;
+  top: 0;
+  bottom: 1.2rem;
+  left: 0;
+  width: 100%;
+  overflow-x: scroll;
+  z-index: 9;
+}
+
+.consulting .consulting_header {
+  position: relative;
+}
+
+.consulting .consulting_header img {
+  height: 1.7rem;
+}
+
+.consulting .consulting_staff {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 1.7rem;
+}
+
+.consulting .choose_estate {
+  color: #fff;
+  position: absolute;
+  right: 0.21rem;
+  top: 0.21rem;
+  font-size: 0.155rem;
+}
+
+.consulting .staff_info {
+  display: flex;
+  color: #fff;
+  padding-top: 0.3rem;
+}
+
+.consulting .staff_info .avatar {
+  flex: 1;
+}
+
+.consulting .staff_info .avatar img {
+  border-radius: 50%;
+  width: 1.12rem;
+  height: 1.12rem;
+  margin-left: 0.22rem;
+}
+
+.consulting .staff_info .desc {
+  flex: 2;
+  padding-left: 0.15rem;
+}
+
+.consulting .name {
+  font-size: 0.176rem;
+  padding-top: 0.25rem;
+}
+
+.consulting .job {
+  color: #c9c9c9;
+  padding: 0.1rem 0 0.18rem 0;
+  font-size: 0.12rem;
+}
+
+.consulting .motto {
+  color: #f6f6f6;
+  font-size: 0.11rem;
+}
+
+.consulting .play_time {
+  text-align: right;
+  padding: 0.04rem 0.1rem;
+  color: #999;
+  font-size: 0.12rem;
+}
+
+.consulting .com_btn {
+  border-radius: 50%;
+  width: 0.39rem;
+  height: 0.39rem;
+  outline: none;
+  border: 0;
+  padding: 0;
+  text-align: center;
+  margin: 0 0.2rem;
+  background: url("../../assets/play.png") no-repeat center;
+  background-size: 100%;
+}
+
+.consulting .com_btn.pause {
+  background: url("../../assets/pause.png") no-repeat center;
+  background-size: 100%;
+}
+
+.consulting .list_item {
+  background: #fff;
+}
+
+.consulting .program-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.15rem;
+}
+
+.consulting .show_num {
+  font-size: 0.155rem;
+  color: #333;
+}
+
+.consulting .splitline {
+  height: 10px;
+  background: #f3f3f3;
+}
+
+.consulting .desc_wrap {
+  padding: 0.15rem 0.2rem;
+}
+
+.consulting .ask {
+  color: #111;
+  font-size: 0.15rem;
+}
+
+.consulting .answer {
+  color: #666;
+  font-size: 0.15rem;
+  padding-top: 0.05rem;
+  display: -webkit-box;
+  /*  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;*/
+  overflow: hidden;
+  margin-bottom: 0;
+  word-break: break-all;
+}
+
+.consulting .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.15rem 0.2rem;
+  border-top: 1px solid #e9e9e9;
+  color: #a9a9a9;
+}
+
+.consulting .status img {
+  width: 0.22rem;
+  height: 0.22rem;
+}
+
+.consulting .status .avatar {
+  border-radius: 50%;
+}
+
+
+.consulting .contact_wrap {
+  background: #f3f3f3;
+  padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+  display: flex;
+  position: fixed;
+  bottom: 0.48rem;
+  width: 100%;
+  z-index: 8;
+}
+
+.consulting .contact_wrap button {
+  background: #00B573;
+  color: #fff;
+  flex: 1;
+  margin: 0 0.02rem;
+  border-radius: 0;
+  padding: 0;
+  height: 40px;
+  line-height: 40px;
+}
+
+
+.consulting_picker {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+}
+
+.toolbar {
+  padding: 5px;
+  font-size: .2rem;
+  border-bottom: 1px solid #D1D1D1;
+  height: .4rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #999;
+}
+
+.progress-bar .progress-percent {
+  background: #ff8417;
+  width: 0;
+  height: 100%;
+}
+
+
+.select_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+.consulting  .mint-loadmore-content {
+  padding-bottom: 0.8rem;
+}
+
+.no-data {
+  padding-top: 1.2rem;
+}

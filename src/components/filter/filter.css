@@ -1,0 +1,89 @@
+.filter-panel{
+  width: 80%;
+  height: 100%;
+}
+.filter-content{
+  height: calc(100% - 0.5rem);
+  overflow-y: scroll;
+  /*padding: 0.1rem 0.1rem 0 0.1rem;*/
+  margin-bottom: 0.5rem;
+}
+.filter-content p{
+  margin: 0 0 0 0.1rem;
+  font-size: 0.16rem;
+  font-weight: 700;
+}
+.filter-content .filter-block{
+  margin-top: 0.2rem;
+  border-bottom: 1px solid #eee;
+  padding:0 0.1rem 0.1rem 0.1rem;
+}
+.filter-content .col-xs-4,
+.filter-content .col-xs-6{
+  padding: 0 0.1rem;
+  margin: 0.1rem 0;
+  font-size: 0.14rem;
+  line-height: 0.3rem;
+  height: 0.3rem;
+}
+.filter-content input[type=radio]{
+  -webkit-appearance: none;
+  background-color: #f2f2f2;
+  width: calc(100%);
+  height: calc(100%);
+  margin: 0;
+  border: 1px solid #f2f2f2;
+  border-radius: 0;
+}
+.filter-content .col-xs-4 label{
+  position: absolute;
+  width: calc(100%);
+  left: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 200;
+  color: #666;
+}
+
+.filter-content .col-xs-4 label .font_w300{
+  font-weight: 200;
+}
+
+.filter-content input[type=radio]:checked{
+  background-color: #00B96D;
+  border-color: #00B96D;
+}
+.filter-content input[type=radio]:checked+label{
+  color: #fff;
+}
+.filter-content input[type=tel]{
+  line-height: 0.3rem;
+  -webkit-appearance: none;
+  border: none;
+  background-color: #f2f2f2;
+  width: calc(100%);
+  padding-left: 1em;
+}
+.filter-content .col-xs-6.first::after{
+  content: "－";
+  position: absolute;
+  color: #d9edf7;
+}
+.filter-panel .filter-btn{
+  position: absolute;
+  bottom: 0;
+  height: 0.5rem;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.filter-panel .filter-btn .col-xs-6{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0.5rem;
+  font-size: 0.16rem;
+}
+.filter-panel .filter-btn .done{
+  color: #fff;
+  background-color: #00B96D;
+}

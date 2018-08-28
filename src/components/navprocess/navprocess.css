@@ -1,0 +1,20 @@
+.nav{
+	position: fixed;
+	bottom:0;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: .15rem;
+
+}
+
+.nav li{
+	background: #d7d7d7;
+	display: inline-block;
+	height: 100%;;
+}
+
+.nav .active{
+	background: #00B96D !important;
+}

@@ -1,0 +1,53 @@
+h3{
+	font-weight: bold;
+	padding: 0 20px;
+}
+
+h5{
+	padding: 0 20px;
+}
+
+.inputbox-f{
+	width: 100%;
+	height: .8rem;
+	line-height: 0.8rem;
+	border-bottom: 1px solid #D1D1D1;
+	border-top: 1px solid #D1D1D1;
+}
+
+.inputbox-f input{
+	height: .8rem;
+	line-height: 0.3rem;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.sendVcode-f{
+	color: white;
+	font-size: 14px;
+	background: #00B96D !important;
+	padding: 5px;
+	line-height: 0.35rem;
+	border-radius: 5px;
+}
+
+.btn-success{
+	color: white;
+	background: #00B96D;
+	border: 1px solid  #00B96D;
+	margin-top: .5rem;
+	outline: none;
+}
+
+.btn-success:hover,
+.btn-success:active:hover{
+	color: white;
+	background: #00B96D;
+	border: 1px solid  #00B96D;
+	outline: none;
+}
+
+.process{
+	font-family: "微软雅黑";
+}

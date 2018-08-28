@@ -1,0 +1,72 @@
+.precontact{
+	font-family: "微软雅黑";
+}
+
+.mint-header{
+	background: #fff !important;
+	color: #000000 !important;
+	border-bottom: 1px solid #D1D1D1;
+}
+
+.mint-header-title{
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.mint-header .mint-button{
+	font-size: .2rem;
+	font-weight: normal;
+	padding-top: 8px;
+}
+
+a.btn.btn-register{
+  background: #00B96D;
+  border:1px solid #00B96D;
+  color: #fff;
+}
+a.btn.btn-register:active{
+  background: #00B96D;
+  color: #fff;
+}
+
+.title{
+	font-size: .2rem;
+	line-height: .6rem;
+}
+
+label{
+	font-weight: normal;
+}
+
+.title img{
+	height: .2rem;
+	margin-right: .1rem;
+}
+
+.btn-primary{
+	background: #37ab6a ;
+	border: 1px solid #37ab6a ;
+}
+
+
+.inputbox{
+	width: 100%;
+	height: .6rem;
+	border-bottom: 1px solid #D1D1D1;
+	padding: 0 10px;
+	border-top:none;
+}
+
+.inputbox input{
+	height: .6rem;
+	background: none;
+	border: none;
+}
+
+.mint-datetime-confirm{
+	color:  #37ab6a ;
+}
+
+.mint-datetime-cancel{
+	color: #a9a9a9;
+}

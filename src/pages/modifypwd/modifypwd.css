@@ -1,0 +1,30 @@
+.inputbox-m{
+	width: 100%;
+	height: .6rem;
+	border-bottom: 1px solid #f7f7f7;
+}
+
+.inputbox-m input{
+	height: .6rem;
+	background: none;
+	border: none;
+	line-height: 0.6rem;
+}
+
+.btn-success{
+	height: 40px;
+	line-height: 40px;
+	padding: 0;
+	font-size: 0.17rem;
+	color: white;
+	background: #00B96D;
+	border: 1px solid  #00B96D;
+	margin-top: .5rem;
+}
+.btn-success:hover,
+.btn-success:active:hover, 
+.btn-success.active:hover{
+  background-color: #00B96D;
+  border-color: #00B96D;
+  outline: none;
+}

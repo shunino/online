@@ -1,0 +1,96 @@
+.login{
+  height: 0.6rem;
+  margin-top: .2rem;
+  height: 100%;
+  overflow: hidden;
+}
+.nav-login a{
+  color: #000000;
+  border-bottom: 1px solid #cccccc;
+}
+.nav-login a > div{
+  font-size: 0.2rem;
+}
+.nav-login a.is-selected{
+  text-decoration: none;
+  color: #00B96D !important;
+  background: #fff;
+  border-bottom: 3px solid #00B96D !important;
+  margin-bottom: 0 !important;
+}
+
+.navlogin{
+	font-family: "微软雅黑";
+}
+
+.btn-success{
+	background: #00B96D !important;
+	border-color:#00B96D;
+	outline: none !important;
+}
+
+.btn-success:hover{
+		border-color:#00B96D;
+}
+
+.btn-success:active, .btn-success.active{
+	border-color:#00B96D;
+}
+.btn-success:active:hover,
+.btn-success.active:hover{
+	border-color:#00B96D;
+}
+a.btn.btn-register{
+  background: transparent;
+  border:1px solid #00B96D !important;
+  color: #00B96D !important;
+}
+
+ a:hover, a:active{
+ 	background: #fff;
+ }
+
+.ksdl,.mmdl{
+	height: 2rem;
+}
+
+.ksdl div,.mmdl div{
+	border-bottom: 1px solid #d1d1d1;
+	padding: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ksdl input,.mmdl input{
+	border: none;
+	line-height: .3rem;
+	height: .3rem;
+	margin-left: 20px;
+	outline: none;
+}
+
+.mmdl input{
+	width: 100%;
+	margin-right:20px;
+}
+
+.getVCode{
+	background:#00B96D;
+	padding: 0 5px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: white;
+	margin-right: 10px;
+	line-height: 0.35rem;
+}
+
+.forgetmm{
+	color: #37AB6A;
+	display: block;
+	margin: 0 auto;
+	width: 60px;
+	padding: 3px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #37AB6A;
+}
+

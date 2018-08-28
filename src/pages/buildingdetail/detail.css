@@ -1,0 +1,857 @@
+.build-detail {
+  -webkit-overflow-scrolling: touch;
+}
+
+.build-detail .container {
+  padding: 0;
+  line-height: inherit;
+}
+
+.build-detail .detail-banner {
+  overflow: hidden;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.build-detail .detail-banner .main-pic-wrap {
+  width: 100%;
+  height: 2.75rem;
+  position: relative;
+}
+
+.build-detail .detail-banner .main-pic {
+  width: 100%;
+  height: 2.75rem;
+}
+
+.build-detail .detail-banner .main-pic-wrap .photos-pic {
+  font-size: 0.14rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 0.14rem;
+  display: inline-block;
+  height: 0.31rem;
+  line-height: 0.31rem;
+  padding: 0 10px;
+  color: #ccc;
+  position: absolute;
+  bottom: 0.15rem;
+  left: 0.15rem;
+}
+
+.build-detail .detail-banner .main-pic-wrap .photos-pic img {
+  width: 0.15rem;
+  height: 0.15rem;
+  position: relative;
+  top: -1px;
+  padding-right: 1px;
+}
+
+#whjjr {
+  padding-top: 0.2rem;
+  border-top: 4px solid #f7f7f7;
+  margin-top: 0;
+}
+
+.build-detail .detail-banner .estate-detail {
+  padding: 0 0.22rem;
+}
+
+.build-detail .detail-banner .look-photos {
+  display: flex;
+  border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.build-detail .detail-banner .look-photos .photo-item {
+  flex: 1;
+  margin: 0.11rem 0;
+  text-align: center;
+}
+
+.build-detail .detail-banner .look-photos .photo-item:last-child {
+  border-left: 1px solid #f7f7f7;
+}
+
+.build-detail .detail-banner .text {
+  padding: 0 0.15rem;
+}
+
+.build-detail .detail-banner .price span {
+  font-size: 0.15rem;
+  color: #ff8518;
+}
+
+.build-detail .detail-banner .price span.bold {
+  font-size: 0.22rem;
+  font-weight: 700;
+}
+
+.build-detail .detail-banner .price .fa-building {
+  color: #37ab6a;
+}
+
+.build-detail .detail-banner .text .fa-heart {
+  color: #cccccc;
+}
+
+.build-detail .detail-banner .text .fa-heart.active {
+  color: #FF6769;
+}
+
+.build-detail .detail-banner .text label {
+  padding: 2px;
+  margin-right: 10px;
+  color: #37ab6a;
+  font-weight: 100;
+  background: #d9edf7;
+  line-height: 0.25rem;
+}
+
+.build-detail .detail-banner .text label.highlight {
+  color: #00BDE3;
+}
+
+
+.build-detail .detail-banner .estate-detail .estate-detail-content {
+  position: absolute;
+  width: 100%;
+  padding: 0 0.26rem;
+  bottom: 0;
+  color: #fff !important;
+  font-size: 0.16rem;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header {
+  line-height: 0.46rem;
+  font-size: 0.24rem;
+  font-weight: 500;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .name {
+  padding: 0.15rem 0;
+  border-bottom: 1px solid #f7f7f7;
+  position: relative;
+  width: 100%;
+  padding-right: 0.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .attention_box {
+  position: absolute;
+  right: 0;
+  font-size: 0.13rem;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .attention_box span {
+  position: relative;
+  top: -2px;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .icon-heart-bg {
+  position: relative;
+  top: 3px;
+  background: url(../../assets/icon-default.png);
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: center center;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .icon-heart-bg.active {
+  background: url(../../assets/icon-conern-active.png);
+  background-size: 16px 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .icon-heart-bg.active~span {
+  color: #00B573;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .price {
+  line-height: 0.3rem;
+  font-size: 0.16rem;
+  font-weight: 400;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .price img {
+  height: 0.22rem;
+  width: 0.22rem;
+  vertical-align: text-bottom;
+  margin-left: 0.1rem;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .price span {
+  color: #fff;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .price .fa-building {
+  color: #fff;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info {
+  margin: 0.25rem 0;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info .info-item {
+  line-height: 0.5rem;
+  font-size: 0.16rem;
+  position: relative;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info .info-item .calculator {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.build-detail .detail-banner .estate-detail .estate-tel a {
+  color: #00B573;
+  font-size: 0.20rem;
+}
+
+.build-detail .detail-banner .estate-detail .estate-tel a img{
+  margin-top: -2px;
+}
+
+.build-detail .detail-banner .estate-detail .estate-tel a:hover,
+.build-detail .detail-banner .estate-detail .estate-tel a:active {
+  background: transparent;
+}
+
+.build-detail .detail-banner .estate-detail .estate-tel a i {
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+
+.build-detail .nav-detail {
+  height: 0.5rem;
+  z-index: 5;
+  margin: 0 0.1rem;
+}
+
+.build-detail .nav-detail a {
+  color: #333;
+}
+
+.build-detail .nav-detail a>div {
+  font-size: 0.15rem;
+}
+
+.build-detail .nav-detail a.is-selected {
+  text-decoration: none;
+  color: #00B573 !important;
+  /* background: #00B573 !important; */
+  border-bottom: 2px solid #00B573;
+  font-size: 0.14rem;
+  font-weight: 700;
+  margin-bottom: 0 !important;
+}
+
+.build-detail .container .bundle {
+  padding-bottom: 0.2rem;
+  border-bottom: 4px solid #f7f7f7;
+  margin-top: 0.2rem;
+  font-size: 0.12rem;
+}
+
+.build-detail .container .bundle:last-child {
+  border-bottom: none;
+}
+
+.build-detail .container p.d-title {
+  line-height: 0.18rem;
+  font-size: 0.15rem;
+  position: relative;
+  color: #00B573;
+  margin-bottom: 0.22rem;
+}
+
+.build-detail .container p.d-title span {
+  margin-left: 0.2rem;
+}
+
+.build-detail .detail-content {
+  padding: 0 0.2rem;
+}
+
+.build-detail .detail-content h4 {
+  color: #111;
+}
+
+.build-detail .detail-content .detail_brightspot {
+  padding: 0;
+  list-style: none;
+}
+
+.build-detail .detail-content .detail_brightspot li {
+  padding: 2px 0;
+  color: #999;
+}
+
+.build-detail .detail-content .detail_brightspot li span {
+  color: #00B573;
+  font-size: 0.11rem;
+  margin-right: 0.1rem;
+  position: relative;
+  top: -2px;
+}
+
+.build-detail .detail-content .brightSpotSummary {
+  color: #666;
+  margin-bottom: 0.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.build-detail .container p.d-title .more {
+  color: #666666;
+  margin-right: 0.2rem;
+}
+
+.build-detail .container p.d-title .more i {
+  font-size: 0.05rem;
+}
+
+.build-detail .container .d-items {
+  display: flex;
+  margin-bottom: 0.13rem;
+  line-height: 0.16rem;
+}
+
+.build-detail .container .d-items .name {
+  flex: 0 0 80px;
+  color: #666;
+}
+
+.build-detail .container .d-items .desc {
+  flex: 1;
+  color: #333;
+}
+
+.build-detail .container .map-pic {
+  height: 1.28rem;
+}
+
+.map-desc {
+  font-size: 0.11rem;
+  color: #666;
+  line-height: 0.25rem;
+  padding-top: 0.1rem;
+}
+
+.build-detail .container .agent .row {
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  /*width: calc(100%);*/
+  overflow-x: scroll;
+  line-height: 0.3rem;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.build-detail .container .row .item {
+  margin: 0.1rem 0;
+}
+
+.build-detail .container .agent .row .item {
+  min-width: calc(36.5%);
+  border: 1px solid #f7f7f7;
+  margin-right: 0.1rem;
+  height: 1.88rem;
+  box-sizing: border-box;
+  padding-top: 0.15rem;
+  margin-top: 0;
+  display: inline-block;
+}
+
+.build-detail .container .agent img {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.build-detail .container .agent .agent-name {
+  font-size: 0.14rem;
+  padding-top: 0.14rem;
+}
+
+.build-detail .container .agent button {
+  line-height: 0.25rem;
+  padding: 0 0.1rem;
+  background: transparent;
+  border: 1px solid #ff8518;
+  border-radius: 3px;
+  color: #ff8518;
+  /*font-size: 0.15rem;*/
+}
+
+.build-detail .container .content-wrap {
+  padding: 0 0.2rem 0.34rem !important;
+}
+
+.build-detail .container .photo-wrap {
+  text-align: center;
+  overflow: hidden;
+}
+
+.build-detail .container .photo-wrap.content-wrap {
+  padding: 0 0.14rem !important
+}
+
+.build-detail .container .photo-wrap .list .img_wrap {
+  position: relative;
+  width: 1.09rem;
+  height: 1.09rem;
+}
+
+.build-detail .container .photo-wrap .list .count {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  right: 0;
+  bottom: 0;
+  height: 0.17rem;
+}
+
+.build-detail .container .photo-wrap .list.col-xs-4 {
+  padding-left: 0.08rem;
+  padding-right: 0.08rem;
+  position: relative;
+  margin-bottom: 0.15rem;
+  height: 1.38rem;
+}
+
+.build-detail .container .photo-wrap .list p {
+  margin-top: 0.1rem;
+  margin-bottom: 0;
+}
+
+.build-detail .container .picture .col-xs-6 {
+  position: relative;
+  height: 0.8rem;
+  width: calc(50% - 0.3rem);
+  line-height: 0.8rem;
+  margin: 0.1rem 0.15rem;
+  padding: 0;
+  background-size: calc(100%) 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 0.2rem;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.build-detail .container .picture .album-summary {
+  background-image: url("../../assets/album-summary.jpg");
+}
+
+.build-detail .container .picture .album-field {
+  background-image: url("../../assets/album-field.jpg");
+}
+
+.build-detail .container .picture .album-model {
+  background-image: url("../../assets/album-model.jpg");
+}
+
+.build-detail .container .picture .album-surround {
+  background-image: url("../../assets/album-surround.jpg");
+}
+
+.build-detail .container .picture .col-xs-6::before {
+  content: "";
+  position: absolute;
+  height: calc(100%);
+  width: calc(100%);
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.build-detail .container .picture .col-xs-6 span {
+  position: relative;
+  z-index: 2;
+}
+
+.build-detail .container .house img {
+  width: calc(96%);
+  height: .85rem;
+  overflow: hidden;
+}
+
+.build-detail .container .house .row {
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+  width: calc(100%);
+  padding: 0.1rem 0;
+  margin-left: 0;
+  overflow-x: scroll;
+  line-height: 0.4rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.build-detail .container .house .row .item {
+  min-width: calc(50%);
+  max-width: calc(50%);
+  width: 50%;
+  height: 1.4rem;
+}
+
+.build-detail .container .house .house-name {
+  font-size: 0.14rem;
+  line-height: 0.2rem;
+}
+
+.build-detail .container .house .house-info {
+  font-size: 0.1rem;
+  line-height: 0.2rem;
+}
+
+.build-detail .container .detail .text-summary {
+  color: #000;
+  font-size: 0.16rem;
+  line-height: 0.25rem;
+}
+
+.build-detail .container .detail .detail-content img {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.build-detail .container .detail .text-sub-title {
+  padding: 0.1rem 0;
+}
+
+.detail-point {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-point li {
+  line-height: 0.2rem;
+}
+
+.detail-point li span {
+  color: #00B573;
+  font-size: 0.03rem;
+  margin-right: 0.05rem;
+  position: relative;
+  top: -1px;
+}
+
+.build-detail .container .detail .text-detail {
+  color: #888;
+  line-height: 0.2rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.build-detail .container .news .news-summary {
+  display: inline;
+  line-height: 0.3rem;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.build-detail .container .news .dynamics {
+  display: flex;
+  justify-content: space-between;
+}
+
+.build-detail .container .news .news-date {
+  display: inline;
+  line-height: 0.3rem;
+  color: #888;
+  flex: 0 0 1rem;
+  text-align: right;
+}
+
+.build-detail .footer {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  line-height: 0.5rem;
+  /* border-top: 1px solid #f7f7f7; */
+  display: none;
+}
+
+.build-detail .footer.is-block {
+  display: flex;
+}
+
+
+.build-detail .footer div {
+  background: #00B573;
+  color: #fff;
+  /* border-right: 1px solid #fff; */
+  font-size: 0.18rem;
+  position: relative;
+}
+
+.build-detail .footer .footer-bg {
+  background: #F8F7F7;
+  color: #666;
+  font-size: 0.12rem;
+}
+
+.build-detail .footer div:last-child {
+  border-right: 0;
+  font-weight: 700;
+  font-size: 0.18rem;
+}
+
+.build-detail .footer div a {
+  color: #666;
+}
+
+.build-detail .footer div a  img{
+  position: absolute;
+}
+
+.build-detail .footer .footer-bg  img {
+  position: absolute;
+  top: 0.07rem;
+  left: 0.38rem;
+}
+
+.build-detail .footer .footer-bg .consult {
+  position: absolute;
+  top: 14px;
+  left: 22px;
+}
+
+.build-detail .footer div a:hover,
+.build-detail .footer div a:active {
+  background: transparent;
+}
+
+.build-detail .footer .col-xs-3 {
+  padding: 0.04rem 0 0.02rem 0;
+  line-height: 0.2rem;
+  border-right: 1px solid #f7f7f7;
+  color: #333333;
+}
+
+.build-detail .footer .col-xs-3 {
+  color: #333333;
+  font-size: 0.1rem;
+}
+
+.build-detail .footer .col-xs-3 i {
+  color: #37ab6a;
+  font-size: 0.15rem;
+  font-weight: 700;
+}
+
+.build-detail .footer .col-xs-9 {
+  color: #37ab6a;
+}
+
+.build-detail .footer .col-xs-9 .col-xs-6:first-child {
+  border-right: 1px solid #d9edf7;
+}
+
+.build-detail .call-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.build-detail .call-dialog .dialog-content {
+  width: 80%;
+  margin-top: 2rem;
+  margin-left: 10%;
+  background: #fff;
+  padding: 0.1rem;
+  border-radius: 5px;
+}
+
+.build-detail .call-dialog .dialog-content .dialog-data {
+  padding: 0.4rem 0 0.3rem;
+  font-size: 0.16rem;
+  line-height: 0.3rem;
+}
+
+.build-detail .call-dialog .dialog-content .dialog-data a,
+a:hover,
+a:active {
+  color: #333333;
+  text-decoration: none;
+}
+
+.build-detail .call-dialog .dialog-content .dialog-data i {
+  font-size: 0.24rem;
+  font-weight: bold;
+}
+
+.build-detail .call-dialog .dialog-content .dialog-data i.icon-call-out {
+  color: #ff8518;
+}
+
+.build-detail .call-dialog .dialog-content .dialog-data i.icon-call-in {
+  color: #38AA9C;
+}
+
+.build-detail .call-dialog .dialog-content .dialog-data i.icon-calendar {
+  color: #37ab6a;
+}
+
+.dialog-enter-active,
+.dialog-leave-active {
+  transition: opacity 0.5s
+}
+
+.dialog-enter,
+.dialog-leave-active {
+  opacity: 0
+}
+
+.build-detail .call-dialog a:hover,
+.build-detail .call-dialog a:active {
+  background: #fff;
+}
+
+.building-info-wrap {
+  height: 2.5rem;
+  /*overflow: scroll;*/
+  overflow: hidden;
+}
+
+.building-num-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.building-item {
+  background: #fff;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 0.15rem;
+  position: absolute;
+  line-height: 0.22rem;
+}
+
+.building-item span {
+  display: inline-block;
+  font-size: 0.15rem;
+  padding: 1px 2px;
+  border-radius: 2px 0 0 2px;
+}
+
+
+.building-info-content {
+  width: 100%;
+  height: 100%;
+  /*  width: 375px;
+  height: 250px;*/
+  position: relative;
+}
+
+.mint-navbar .mint-tab-item a:hover {
+  background: #fff;
+}
+
+
+/*iPhoneX的适配*/
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  body {
+    padding-bottom: 78px !important;
+  }
+  #main {
+    height: auto !important;
+  }
+  .build-detail .container .content-wrap {
+    padding: 0 0.2rem 0.34rem !important;
+  }
+
+  .build-detail .footer {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    line-height: 0.5rem;
+    padding-bottom: 0.34rem !important;
+    /* border-top: 1px solid #f7f7f7; */
+    display: none;
+  }
+
+}
+/*iPhoneX的适配*/
+@media only screen and (device-width: 375px) and (device-height: 744px) {
+  body {
+    padding-bottom: 78px !important;
+  }
+  #main {
+    height: auto !important;
+  }
+  .build-detail .container .content-wrap {
+    padding: 0 0.2rem 0.34rem !important;
+  }
+
+  .build-detail .footer {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    line-height: 0.5rem;
+    padding-bottom: 0.34rem !important;
+    /* border-top: 1px solid #f7f7f7; */
+    display: none;
+  }
+
+}
+
+
+
+
+/*iPhoneX的适配*/
+@media only screen and (device-width: 375px) and (device-height: 744px) {
+  /* body {
+    padding-bottom: 78px !important;
+  } */
+
+  .build-detail .container .content-wrap {
+    padding: 0 0.2rem 0.34rem !important;
+  }
+
+  .build-detail .footer {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    line-height: 0.5rem;
+    padding-bottom: 0.34rem !important;
+    /* border-top: 1px solid #f7f7f7; */
+    display: none;
+  }
+
+
+}

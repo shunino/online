@@ -1,0 +1,173 @@
+.appoint {
+  padding: 0 0.1rem;
+}
+
+.appointment {
+  border-bottom: 4px solid rgba(238, 238, 238, 0.51);
+  padding: 0.2rem 0 0.1rem 0;
+}
+
+.appointment:last-child {
+  border-bottom: none;
+}
+
+.appointment .left-part {
+  width: 0.5rem;
+}
+
+.appointment .left-part img {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.appointment .left-part .line {
+  width: 1px;
+  height: 1rem;
+  background: #cccccc;
+  margin: auto;
+}
+
+.appointment .left-part .line:last-child {
+  height: 0.5rem;
+}
+
+.appointment .left-part .line>div {
+  width: 0.2rem;
+  height: 0.2rem;
+  position: relative;
+  top: 0.4rem;
+  left: -0.1rem;
+  background: #eee;
+  border-radius: 50%;
+}
+
+.appointment .right-part {
+  width: calc(100% - 0.6rem);
+}
+
+.appointment .right-part .appoint-header {
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.appointment .right-part .appoint-header span {
+  /*margin-left: 0.1rem;*/
+  font-size: 0.16rem;
+}
+
+.appointment .right-part .appoint-header a {
+  background: #ffffff;
+  /*padding: 0 0.15rem;*/
+  width: 1rem;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 0.1rem;
+  color: #00B96D;
+  border: 1px solid #00B96D;
+  border-radius: 0.15rem;
+  line-height: 0.3rem;
+}
+
+.appointment .right-part .building {
+  height: 1.2rem;
+  padding: 0.1rem 0;
+  border-top: 1px solid rgba(204, 204, 204, 0.38);
+}
+
+.appointment .right-part .building img {
+  width: 1.2rem;
+  height: 0.8rem;
+}
+
+.appointment .right-part .building .build-info {
+  width: calc(100% - 1.2rem);
+  height: 0.8rem;
+  padding-left: 0.1rem;
+  font-size: 0.14rem;
+}
+
+.appointment .right-part .building .build-info .name {
+  font-weight: 700;
+  line-height: 0.2rem;
+}
+
+.appointment .right-part .building .build-info .addr {
+  color: #666;
+  line-height: 0.2rem;
+}
+
+.appointment .right-part .building .build-info .price {
+  color: #ff8518;
+  line-height: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+.appointment .right-part .building .build-info .price span {
+  font-weight: 700;
+}
+
+
+.call-dialog .dialog-content {
+  width: 80%;
+  margin-top: 2rem;
+  margin-left: 10%;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.call-dialog .dialog-content .close-btn {
+  padding: 0.1rem 0.1rem;
+  text-align: right;
+}
+
+.call-dialog .dialog-content .dialog-data {
+  padding: 0.2rem 0 0.3rem;
+  font-size: 0.16rem;
+  line-height: 0.3rem;
+}
+
+.call-dialog .dialog-content .dialog-data a,
+a:hover,
+a:active {
+  color: #333333;
+  text-decoration: none;
+}
+
+.call-dialog .dialog-content .dialog-data i {
+  font-size: 0.24rem;
+  font-weight: bold;
+}
+
+.call-dialog .dialog-content .dialog-data i.icon-call-out {
+  color: #ff8518;
+}
+
+.call-dialog .dialog-content .dialog-data i.icon-call-in {
+  color: #38AA9C;
+}
+
+.call-dialog .dialog-content .dialog-data i.icon-calendar {
+  color: #37ab6a;
+}
+
+.dialog-enter-active,
+.dialog-leave-active {
+  transition: opacity 0.5s
+}
+
+.dialog-enter,
+.dialog-leave-active {
+  opacity: 0
+}
+
+.call-dialog .dialog-content .dialog-data a,
+a:hover,
+a:active {
+  background: #fff;
+}
+
+
+.load-more {
+  padding-bottom: 0.5rem;
+}

@@ -1,0 +1,118 @@
+.building-detail{
+  padding: 0 0.13rem;
+}
+
+.buildinginfo .status{
+  font-size: 0.15rem;
+}
+
+.building-detail .item{
+  padding: 0.04rem 0;
+  color: #333;
+  display: flex;
+}
+
+.building-detail .item div{
+  flex: 1;
+}
+
+.building-detail .item.item-first{
+  color: #666;
+}
+
+.unit-info{
+  margin-top: 0.2rem;
+}
+
+.unit-info .line{
+  height: 10px;
+  background: #f4f4f4;
+  width: 100%;
+}
+
+.unit-content{
+  display: flex;
+}
+
+.unit-content .content-left{
+  flex:0 0 60px;
+  text-align: center;
+  border-right: 1px solid #dbe1ed;
+}
+
+.unit-content .content-left .title{
+  position: relative;
+  height: 40px;
+  border-right: 1px solid #dbe1ed;
+  border-bottom: 1px solid #dbe1ed;
+  background: url(../../assets/bg_line.png);
+}
+
+.unit-content .content-left .title-u,
+.unit-content .content-left .title-f{
+  position: absolute;
+}
+
+.unit-content .content-left .title-u{
+  top: 0;
+  right: 0;
+}
+
+.unit-content .content-left .title-f{
+  bottom: 0;
+  left:0;
+}
+
+.unit-content .content-left .floor{
+  height: 40px;
+  line-height: 40px;
+}
+
+.unit-content .content-right{
+  display: flex;
+  flex:1;
+  overflow-x: scroll;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.unit-content .content-right .unit-item{
+  min-width: calc(50%);
+  max-width: calc(100%);
+/*  min-width: 50%;
+  max-width: 100%;*/
+  justify-content: space-between;
+  /*margin: 0 0.1rem;*/
+}
+
+.unit-content .content-right .unit-title{
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dbe1ed;
+}
+
+.unit-content .content-right .room-group{
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  overflow-x: scroll;
+}
+
+.room-group .room-num{
+  flex: 1;
+  padding-left: 0.1rem;
+}
+
+.room-group .room-num span{
+  width: 0.4rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  display: inline-block;
+  text-align: center;
+  margin:0.02rem;
+  border-radius: 0.2rem;
+}
+

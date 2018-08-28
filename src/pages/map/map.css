@@ -1,0 +1,59 @@
+.map,#container{
+  height: 100%;
+  width: 100%;
+}
+
+#map-holder{
+  width: 100%;
+  height: calc(100% - 0.5rem);
+}
+#map-holder div.anchorBL{
+  display: none !important;
+}
+.map-summary{
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  left: 0;
+  bottom: 0.5rem;
+  line-height: 0.4rem;
+  font-size: 0.14rem;
+  background: rgba(255,255,255,0.8);
+}
+.map-summary span{
+  padding: 0 0.05rem;
+  color: #ff8518;
+}
+.map-filter{
+  position: fixed;
+  top: 0;
+  height: 0.6rem;
+  width: 100%;
+  line-height: 0.4rem;
+  padding: 0.1rem;
+  background:#fcfcfc;
+  box-sizing: border-box;
+}
+.map-filter img{
+  width: 0.22rem;
+  height: 0.22rem;
+  border-radius: 2px;
+  position: relative;
+  top: -1px;
+}
+.map-filter input{
+  width: calc(100% - 0.95rem);
+  margin: 0 0.1rem;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.8;
+  height: 0.20rem;
+  line-height: 0.20rem;
+  padding: 0.09rem 0;
+  box-sizing: initial;
+  border: 1px solid #d3d3d3;
+}
+.map-filter input::placeholder{
+  color: #999;
+}

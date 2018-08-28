@@ -1,0 +1,13 @@
+.newsDetail{
+  padding: 20px;
+}
+
+.subtitle{
+  display: flex;
+  justify-content: space-between;
+  color: #A9A9A9;
+}
+.newsDetail .newsContent img{
+  width: calc(100%) !important;
+  height: auto !important;
+}

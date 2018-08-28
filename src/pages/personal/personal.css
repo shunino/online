@@ -1,0 +1,200 @@
+.personal{
+  height: 100%;
+}
+
+.gray-bg{
+  height: 100%;
+  padding-bottom: 0.48rem;
+  background: #f7f7f7;
+}
+.container{
+  line-height: 0.5rem;
+  font-size: 0.18rem;
+  margin-bottom: 0.5rem;
+  padding: 0 !important;
+  margin: 0 !important;
+  /* background: #fff; */
+}
+.personal .info{
+  padding: 0.27rem 0.2rem;
+  display: flex;
+  font-size: 0.25rem;
+  background: #fff;
+  margin-bottom: 0.1rem;
+}
+
+.personal .name{
+  flex: 2;
+}
+
+.personal .avatar{
+  /* flex: 1; */
+  margin-right: 0.12rem;
+  /* text-align: right; */
+}
+
+.personal .avatar img{
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+}
+
+.personal .double{
+  height: 0.5rem;
+  /* padding-top: 0.12rem; */
+}
+.personal .double img{
+  float: left;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: none;
+}
+.personal .double > div{
+  display: inline-block;
+  margin-left: 0.02rem;
+  line-height: 0.3rem;
+  margin-top: 0.02rem;
+
+}
+
+.personal .double .user-name {
+  font-size: 0.24rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.personal .double .user-name .text-tips{
+  font-weight: normal;
+}
+
+.personal .right-arrow {
+  padding-left: 0.26rem;
+}
+
+.personal .right-arrow img{
+  width: 0.1rem;
+  height: 0.16rem;
+  margin-top: 0.22rem;
+}
+
+.personal .text-tips{
+  font-size: 0.12rem;
+  line-height: 0.2rem;
+  color: #b2b2b2;
+  padding-top: 0.1rem;
+}
+.personal .number{
+  line-height: 0.25rem;
+  padding: 0 0.19rem;
+  display: flex;
+  margin-top: 0.1rem;
+}
+
+.personal .number button{
+  flex: 1;
+  margin-right: 0.04rem;
+}
+
+.personal .number button:last-child{
+  margin-right: 0;
+}
+
+.personal .number-highlight{
+  color: #ff8518;
+  font-size: 0.2rem;
+}
+.personal .number-text{
+  font-size: 0.16rem;
+}
+
+.personal .light-green{
+  background: #00B96D;
+  color: #fff;
+  font-size: 0.15rem;
+  padding:0;
+  height: 0.4rem;
+  line-height: 0.4rem;
+}
+
+.main-list{
+  background: #fff;
+
+}
+.personal .main-list > div{
+  line-height: 0.6rem;
+  border-bottom: 1px solid #f7f7f7;
+  margin: 0 0.2rem !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal .main-list .row .row-title {
+  padding: 0 !important;
+  font-size: 0.16rem;
+}
+.personal .main-list .row img{
+  width: 0.1rem;
+  height: 0.16rem;
+}
+
+.personal .main-list .row .appoint img{
+  width: 0.18rem;
+  height: 0.16rem;
+}
+
+.personal .main-list .row .record  img{
+  width: 0.16rem;
+  height: 0.16rem;
+}
+
+.personal .main-list .row .concern img{
+  width: 0.14rem;
+  height: 0.21rem;
+}
+
+.personal .main-list .row .suggest img{
+  width: 0.17rem;
+  height: 0.16rem;
+}
+
+
+.personal .main-list .row span{
+  margin-left: 0.09rem;
+}
+
+.personal .main-list .row .col-xs-3{
+  padding: 0 !important;
+}
+
+.personal .main-list i{
+  color: #b2b2b2;
+}
+.personal .hot-line{
+  font-size: 0.14rem;
+  /* padding: 0 0.3rem; */
+  background: #fff;
+  text-align: center;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+
+.personal .hot-line a{
+  height: 60px;
+  line-height: 60px;
+  font-size: 0.14rem;
+  color: #191919;
+}
+
+.personal .hot-line a .tel{
+  font-size: 0.14rem;
+  color: #00B573;
+}
+.hot-button{
+  border-radius: 0;
+}
+
+.mint-button:not(.is-disabled):active:after{
+  opacity: 0;
+}
