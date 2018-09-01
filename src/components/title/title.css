@@ -1,0 +1,28 @@
+.title_group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.2rem 0.22rem 0 0.14rem;
+}
+
+.title_group .title{
+font-family: PingFangSC-Medium;
+font-size: 0.21rem;
+color: #333333;
+line-height: 0.25rem;
+}
+
+.title_group .more{
+  color:#474747;
+}
+
+.title_group .more .more_house {
+  font-family: PingFangSC-Regular;
+font-size: 0.12rem;
+color: #474747;
+line-height: 0.16rem;
+}
+
+.title_group .more img{
+  width: 0.18rem;
+  height: 0.18rem;
+}

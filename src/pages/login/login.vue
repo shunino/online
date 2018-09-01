@@ -129,30 +129,31 @@
 				this.$router.push(page);
 			},
 			login(){
-				if(this.tel=="" || !(/^1[1-9]\d{9}$/).test(this.tel)){
-					Toast('请填写正确的手机号');
-					return;
-				}
-				if(this.selected=="ksdl" && this.vcode==""){
-					Toast('请输入验证码');
-					return;
-				}
-				if(this.selected=="mmdl" && this.pwd==""){
-					Toast('请输入密码');
-					return;
-				}
-				var param={
-					"phone":this.tel
-				};
-				if(this.selected=="mmdl"){
-					param.type=1;
-					param.password=this.pwd;
-				}
+				// if(this.tel=="" || !(/^1[1-9]\d{9}$/).test(this.tel)){
+				// 	Toast('请填写正确的手机号');
+				// 	return;
+				// }
+				// if(this.selected=="ksdl" && this.vcode==""){
+				// 	Toast('请输入验证码');
+				// 	return;
+				// }
+				// if(this.selected=="mmdl" && this.pwd==""){
+				// 	Toast('请输入密码');
+				// 	return;
+				// }
+				// var param={
+				// 	"phone":this.tel
+				// };
+				// if(this.selected=="mmdl"){
+				// 	param.type=1;
+				// 	param.password=this.pwd;
+				// }
 
-				if(this.selected=="ksdl"){
-					param.type=0;
-					param.verCode=this.vcode;
-				}
+				// if(this.selected=="ksdl"){
+				// 	param.type=0;
+				// 	param.verCode=this.vcode;
+				// }
+				let param = {};
 				this.common.request.post("/wechat/login",param).then(data=>{
 
 					console.log('==updateDate==createDate=', data)

@@ -89,7 +89,8 @@ function ajaxLogRequest(url, data, type){
   const appId = 'onlineSale';
   const appSecurect = 'e9178578-845f-486c-bd18-5011c7472f72';
   const time = new Date().getTime();
-  let sign = md5(appId + time + appSecurect);
+  //let sign = md5(appId + time + appSecurect);
+  let sign = appId + time + appSecurect;
   let content = [];
   content.push(data);
 

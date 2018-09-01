@@ -1,10 +1,10 @@
 <template>
   <div>
-    <div class="banner" style="position: relative;">
-      <swipe v-if='data.length > 0' :auto="4000"  :show-indicators="true">   
+    <div class="banner" style="position: relative;" v-bind:style="{height:height,width:width}">
+      <!-- <swipe v-if='data.length > 0' :auto="4000"  :show-indicators="true">   
         <swipe-item v-for="item in data">
           <a>
-            <!--<img v-lazy="fileurl+item.imageWechat" @click="goPage(item.bannerType,item.url)" height="100%"/> -->
+            
             <img v-if="item.imageWechat != null && item.imageWechat !=''" :src="fileurl+item.imageWechat" @click="goPage(item.bannerType,item.url,item.buildingId)" height="100%"/>
           	<img v-else src="../../assets/banner.png" height="100%" width="100%" class="pull-left">
           </a>
@@ -16,6 +16,19 @@
             <img src="../../assets/banner.png" height="100%" width="100%" class="pull-left">
           </a>
         </swipe-item>
+      </swipe> -->
+
+      <swipe  :auto="4000"  :show-indicators="true">   
+        <swipe-item>
+          <a>
+            <img src="../../assets/banner.png" height="100%" width="100%" class="pull-left">
+          </a>
+        </swipe-item>
+        <swipe-item>
+          <a>
+            <img src="../../assets/pic1.png" height="100%" width="100%" class="pull-left">
+          </a>
+        </swipe-item>
       </swipe>
     </div>
   </div>
@@ -23,19 +36,12 @@
 <script>
   import { Swipe, SwipeItem } from 'mint-ui';
   export default {
-  	data(){
-  		return {
-		     fileurl:config.file_show_url
-  		}
-  	},
     name: 'banner',
-    props: ['data'],
+    props: ['data','width','height'],
     created(){
     },
-    filters: {
-	    imgUrl(url) {
-	      return config.file_show_url+url;
-	    }
+    mounted(){
+      $('')
     },
     methods: {
       goPage(type,link,buildingId){
@@ -63,11 +69,30 @@
   }
 </script>
 <style>
-  .banner{
-    height: 1.875rem !important;
-  }
   .banner img{
     width: 100%;
+  }
+  .content .mint-swipe-indicators .is-active {
+    background: #0EB375 !important;
+  }
+  .content .mint-swipe-indicator {
+    width: 17px !important;
+    height: 4px !important;
+    background: #F4F4F5 !important;
+    opacity: 1;
+    border-radius: 100px !important;
+    margin: 0 3px;
+  }
+  .no_margin{
+    margin:0 !important;
+  }
+  .no_margin .mint-swipe-indicator {
+    width: 17px !important;
+    height: 4px !important;
+    background: #F4F4F5 !important;
+    opacity: 1;
+    border-radius: 100px !important;
+    margin: 0px !important;
   }
   .banner .mint-swipe-indicator.is-active{
     opacity: 1 !important;
