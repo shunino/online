@@ -1,5 +1,5 @@
 .building_group {
-  margin: 0 0.14rem;
+  margin-left:0.14rem;
   /* display: flex; */
   /* width: 100%; */
   /* overflow: scroll; */
@@ -11,7 +11,8 @@
   display: inline-block;
   width: 2.47rem;
   background: #FFFFFF;
-  margin: 0.24rem 0.07rem;
+  margin-top:0.24rem;
+  margin-right: 0.07rem;
 }
 
 .building_group .building_item:first-child {
@@ -56,12 +57,14 @@ line-height: 0.22rem;
 }
 
 .building_group .building_item .building_name{
+  display: flex;
+  align-items: center;
   position: relative;
+   margin-top: 0.12rem;
 }
 
 .building_group .building_item .building_name .name{
   display: inline-block;
-  margin-top: 0.12rem;
   font-family: PingFangSC-Medium;
 font-size: 0.1rem;
 color: #333333;
@@ -73,6 +76,7 @@ line-height: 0.19rem;
   background: url(../../assets/icon-default.png) no-repeat;
   width: 0.15rem;
   height: 0.139rem;
+  margin-left: 0.085rem;
   background-size: 0.16rem 0.14rem;
 }
 
@@ -122,6 +126,6 @@ padding-left: 0rem;
 }
 .building_group .building_item_more .build_more{
   display: inline-block;
-    width: 0.5rem;
+    width: 0.1rem;
     white-space: normal;
 }

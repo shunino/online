@@ -24,7 +24,10 @@ p{
   z-index: 99;
   border-bottom: 1px solid #ececec;
 }
-
+.home .no_margin{
+  margin-top: 0.24rem !important;
+  margin-left: 0 !important;
+}
 .home .map .icon-logo {
   width: 0.88rem;
   height: 0.24rem;

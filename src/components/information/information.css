@@ -1,11 +1,12 @@
 .home_new .news {
  margin-left: 0.14rem;
+ margin-top:0.055rem;
 }
 
 .home_new .item {
   display: flex;
   height: 0.6335rem;
-  margin-top:0.1rem; 
+  margin-top:0.1rem ; 
 }
 
 .itelm:first-child {

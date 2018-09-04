@@ -1,84 +1,79 @@
-.search_box{
+.searchfilter_box{
     margin-left: 0.14rem;
     margin-top:0.145rem;
     margin-bottom: 0.15rem; 
 }
-.search_box .search_recommend{
+.searchfilter_box .search_recommend{
     display: none;
 }
-.search_box .my_search{
+.searchfilter_box .my_search{
 	display: flex;
 	height: 0.3rem;
     /*display: flex;
     align-items: center;*/
 }
-.search_box .search_more{
-    font-family: PingFangSC-Regular;
-    font-size: 0.15rem;
-    color: #6BA686;
-    line-height: 0.18rem;
-    margin-top:0.265rem;
+.searchfilter_box .my_search .filter{
+    width: 0.47rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.search_box .search_recommend .search_del{
+.searchfilter_box .my_search .filter img{
+    width: 0.18rem;
+    height: 0.18rem;
+}
+.searchfilter_box .search_recommend .search_del{
     width: 0.165rem;
     height: 0.18rem;
     margin-left: 2.38rem;
 }
-.search_box .search_recommend .search_dell{
+.searchfilter_box .search_recommend .search_dell{
     width: 0.12rem;
     height: 0.12rem;
     position: absolute;right: -0.015rem;
     top: -0.015rem;
 }
-.search_box .my_search .city{
+.searchfilter_box .my_search .city{
 font-family: PingFangSC-Regular;
-/*background: #F4F4F5;*/
-background: #fff;
+background: #F4F4F5;
 font-size: 0.12rem;
 color: #222222;
 letter-spacing: 0;
-width: 0.62rem;
+width: 0.5rem;
 height: 0.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom-left-radius: 0.06rem;
     border-top-left-radius:  0.06rem;
-    border: 1px solid #F4F4F5;
-box-shadow: 0 0.05rem 0.125rem 0 rgba(242,242,242,0.70);
-border-right-width: 0;
 }
-.search_box .my_search .city img{
+.searchfilter_box .my_search .city img{
     width: 0.06rem;
     height: 0.0375rem;
-    margin-left: 0.06rem ;
+    margin-left: 0.06rem;
 }
-.search_box .my_search .mint-search{
-    width: 2.80rem;
+.searchfilter_box .my_search .mint-search{
+    width: 2.6rem;
 	height: 100%;
 }
-.search_box .my_search .mint-searchbar {
+.searchfilter_box .my_search .mint-searchbar {
     position: relative;
     box-sizing: border-box;
     padding: 0px;
     z-index: 1;
     background: #fff;
 }
-.search_box .my_search .mint-searchbar-inner{
-/*    background: #F4F4F5;*/
+.searchfilter_box .my_search .mint-searchbar-inner{
+    background: #F4F4F5;
     border: 1px solid #F4F4F5;
     box-shadow: 0 0.05rem 0.125rem 0 rgba(242,242,242,0.70);
     border-radius: 0.06rem;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     padding: 0px;
-    
-    border-left-width: 0px;
-        border-bottom: 0px;
-        height: 0.29rem;
-
+    padding-top: 0.01rem;
 }
-.search_box .my_search .mint-searchbar-cancel{
+.searchfilter_box .my_search .mint-searchbar-cancel{
 	font-family: PingFangSC-Regular;
 font-size: 0.14rem;
 color: #333333;
@@ -90,23 +85,23 @@ height: 0.3rem;
     justify-content: center;
     margin-left: 0;
 }
-.search_box .my_search .mint-searchbar-inner input{
+.searchfilter_box .my_search .mint-searchbar-inner input{
     font-family: PingFangSC-Regular;
 font-size: 0.12rem;
 color: #CCCCCC;
-background: #fff;
+background: #F4F4F5;
 }
-.search_box .my_search .mint-searchbar-inner .mintui-search{
+.searchfilter_box .my_search .mint-searchbar-inner .mintui-search{
     display: none;
 }
 
-.search_box .title{
+.searchfilter_box .title{
 font-family: PingFangSC-Medium;
 font-size: 0.21rem;
 color: #333333;
 line-height: 0.25rem;
 }
-.search_box .search_tag{
+.searchfilter_box .search_tag{
 margin-top:0.14rem;
 background: #F4F4F5;
 border-radius: 0.5rem;
@@ -117,13 +112,10 @@ display: inline-block;
 line-height: 0.31rem;
 text-align: center;
 position: relative;
-font-family: PingFangSC-Regular;
-font-size: 0.13rem;
-color: #646A7D;
 }
-.search_box .hot{
+.searchfilter_box .hot{
     margin-top: 0.5rem;
 }
-.search_box .local{
+.searchfilter_box .local{
     margin-top: 0.5rem;
 }

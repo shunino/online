@@ -27,9 +27,9 @@ function ajaxRequest(url, data, type){
       if(response.result){
         deffered.resolve(response.objValue);
       }else{
-      	if($(".mint-loadmore-bottom") && response.value.indexOf("没有查找到楼盘")>-1){
-      		$(".mint-loadmore-bottom").hide();
-      	}
+      	// if($(".mint-loadmore-bottom") && response.value.indexOf("没有查找到楼盘")>-1){
+      	// 	$(".mint-loadmore-bottom").hide();
+      	// }
         deffered.reject(response.value);
       }
       setTimeout(function(){

@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="banner" style="position: relative;" v-bind:style="{height:height,width:width}">
-      <!-- <swipe v-if='data.length > 0' :auto="4000"  :show-indicators="true">   
+      <swipe v-if='data.length > 0' :auto="4000"  :show-indicators="true">   
         <swipe-item v-for="item in data">
           <a>
             
-            <img v-if="item.imageWechat != null && item.imageWechat !=''" :src="fileurl+item.imageWechat" @click="goPage(item.bannerType,item.url,item.buildingId)" height="100%"/>
+            <img v-if="item.imageWechat != null && item.imageWechat !=''" :src="item.imageWechat" @click="goPage(item.url)" height="100%"/>
           	<img v-else src="../../assets/banner.png" height="100%" width="100%" class="pull-left">
           </a>
         </swipe-item>
@@ -16,20 +16,8 @@
             <img src="../../assets/banner.png" height="100%" width="100%" class="pull-left">
           </a>
         </swipe-item>
-      </swipe> -->
-
-      <swipe  :auto="4000"  :show-indicators="true">   
-        <swipe-item>
-          <a>
-            <img src="../../assets/banner.png" height="100%" width="100%" class="pull-left">
-          </a>
-        </swipe-item>
-        <swipe-item>
-          <a>
-            <img src="../../assets/pic1.png" height="100%" width="100%" class="pull-left">
-          </a>
-        </swipe-item>
       </swipe>
+
     </div>
   </div>
 </template>
@@ -41,26 +29,11 @@
     created(){
     },
     mounted(){
-      $('')
+      //$('')
     },
     methods: {
       goPage(type,link,buildingId){
-        let _this = this;
-        let scrollTop = sessionStorage.scrolltop ? sessionStorage.scrolltop : 0;
-        switch(type){
-          	case "0":
-          	 break;
-          	case "1":
-              _this.$router.push("/buildingdetail/building/"+link + '/' + scrollTop + '/' + buildingId);
-          	 break;
-          	case "2":
-              _this.$router.push("/newsDetail/"+link);
-          	 break;
-          	case "3":
-          	  location.href= 'http://' + link;
-          	 break;
-          }
-      }
+        }
     },
     components:{
       'swipe': Swipe,
@@ -82,9 +55,6 @@
     opacity: 1;
     border-radius: 100px !important;
     margin: 0 3px;
-  }
-  .no_margin{
-    margin:0 !important;
   }
   .no_margin .mint-swipe-indicator {
     width: 17px !important;
