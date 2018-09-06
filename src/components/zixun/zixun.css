@@ -1,0 +1,52 @@
+.zixun_box{
+	margin-left: 0.14rem;
+	display: flex;
+	height: 0.25rem;
+	margin-top:0.25rem;
+	align-items: center;
+}
+.zixun_box .zixun_bg{
+	width: 0.57rem;
+	height: 0.25rem;
+	margin-right: 0.1rem;
+}
+.zixun{
+	width: 2.77rem;
+	height: 0.25rem;
+	background: #F4F4F5;
+border: 1px solid #F4F4F5;
+border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.zixun_lunbo{
+	width: 2.72rem;
+	height: 0.15rem;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.zixun_lunbo .text_list{
+	height: 0.15rem;
+	width: 1.98rem;
+	position: absolute;
+	font-family: PingFangSC-Regular;
+	font-size: 0.11rem;
+	color: #000000;
+	letter-spacing: 0;
+	width: 1.98rem;
+	margin-left: 0.1rem;
+}
+.zixun_lunbo .zixun_more{
+	position: absolute;
+	right: 0px;
+	height: 0.15rem;
+	font-family: PingFangSC-Regular;
+font-size: 0.11rem;
+color: #333333;
+letter-spacing: 0;
+width: 0.34rem;
+text-align: center;
+border-left: 1px solid #989CA8;
+}

@@ -1,0 +1,46 @@
+.home_new .news {
+ margin-left: 0.14rem;
+}
+
+.home_new .item {
+  display: flex;
+  height: 0.6335rem;
+  margin-top:0.1rem; 
+}
+
+.itelm:first-child {
+  margin-top: 0;
+}
+
+.home_new .item .item_left {
+  height: 100%;
+  width: 1.125rem;
+  display: inline-block;
+}
+
+.home_new .item .item_left img{
+ border-radius: 2px;
+ width: 100%;
+ height: 100%;
+}
+
+.home_new .item .item_right {
+  display: inline-block;
+  margin-left: 0.12rem;
+}
+
+.home_new .item .item_right .name {
+  font-family: PingFangSC-Semibold;
+font-size: 0.12rem;
+color: #373C43;
+line-height: 0.16rem;
+margin-top: 0.12rem;
+}
+
+.home_new .item .item_right .time {
+ font-family: PingFangSC-Regular;
+font-size: 0.11rem;
+color: #989CA8;
+line-height: 0.15rem;
+margin-top:0.04rem;
+}

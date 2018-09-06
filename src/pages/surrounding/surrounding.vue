@@ -99,7 +99,9 @@ export default {
   		let opts = {
   		  position : point,    // 指定文本标注所在的地理位置
   		  offset   : new BMap.Size(10, -30)    //设置文本偏移量
-  		}
+			}
+			var local = new BMap.LocalSearch(this.mapObj, {renderOptions: {map: this.mapObj}});      
+      local.search("银行");
   		let label = new BMap.Label(this.projectName, opts);  // 创建文本标注对象
   		label.setStyle({
   			 color : "#00B96D",

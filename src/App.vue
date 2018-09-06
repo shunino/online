@@ -162,7 +162,7 @@
 	
 	#main {
 		height: 100%;
-		padding-bottom: 0.48rem;
+		/* padding-bottom: 0.48rem; */
 		-webkit-overflow-scrolling:touch;
 	}
 </style>

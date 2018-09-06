@@ -245,5 +245,29 @@ export default [
     meta: {
       keepAlive: false 
     }
+  },{
+    path: '/newOpening',// 最新开盘
+    component: resolve => require(['../pages/newOpening/newOpening.vue'], resolve),
+    meta: {
+      keepAlive: true 
+    }
+  },{
+    path: '/dynamic',// 动态详情
+    component: resolve => require(['../pages/dynamic/dynamic.vue'], resolve),
+    meta: {
+      keepAlive: true 
+    }
+  },{
+    path: '/agent/:buildId',// 官方经纪人
+    component: resolve => require(['../pages/agent/agent.vue'], resolve),
+    meta: {
+      keepAlive: true 
+    }
+  },{
+    path: '/houseTypeList',// 户型列表
+    component: resolve => require(['../pages/houseTypeList/houseTypeList.vue'], resolve),
+    meta: {
+      keepAlive: true 
+    }
   }
 ]

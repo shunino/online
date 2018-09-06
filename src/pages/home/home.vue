@@ -1,24 +1,8 @@
 <template>
   <div class="home">
-    <div class='map' v-show="isWechat">
-      <div class="icon-logo"></div>
-      <div class='choose_city' @click='goChooseCity("/choosecity")'> {{city}} 
-        <!-- <i class='icon-arrow-down city-btn'></i> -->
-        <img src="../../assets/home/icon-arrow-down.png" width="16" height="10">
-      </div>
-      <!-- <div class='choose_house' @click='goPage("/map")'>
-        <i class='icon_map'></i>
-        <span class='map_choose'>地图选房</span>
-      </div> -->
-    </div>
+    <my-search />
     <div class='content'>
-      <div class='title'>
-        <span class='text'>美好生活</span>
-        <span class='buy'>置业绿城</span>
-      </div>
-      <div class='detail'>
-        绿城官方产品与服务一站式直销平台
-      </div>
+      <my-banner height="1.9075rem" width="3.39rem" />
     </div>
     <div class='activity'>
       <div class='activity_item' @click="goPage('building')">
@@ -34,128 +18,67 @@
         <span class='activity_name'>绿城小镇</span>
         
       </div>
-      <!-- <div class='activity_item' @click='goActivityList(1)'>
-        <i class='icon_visit_house'></i>
-        <span class='activity_name'>旅居地产</span>
-      </div> -->
       <div class='activity_item' @click="goPage('information')">
         <i class='icon_visit_house'></i>
-        <span class='activity_name'>房产资讯</span>
+        <span class='activity_name'>地图找房</span>
       </div>
     </div>
-    <div class='seperate_line' v-if="builds.length > 0"></div>
-    <section class='building_panel' v-if="builds.length > 0">
-      <div class='title_group'>
-        <div class='title'>推荐楼盘</div>
-        <div class='more' @click="goPage('building')">
-          <span class='more_house'>更多</span>
-          <!-- <i class='icon-arrow-right'></i> -->
-          <img src="../../assets/home/icon-arrow-right.png" width="10" height="16">
-        </div>
+    <my-zixun />
+    <my-title name="得到的" />
+    <my-scroll :builds="builds" />
+    <my-title name="得到的" />
+    <my-scroll :builds="builds" />
+    <my-title name="好盘" />
+    <div class="haopan">   
+      <div class="haopan_div">
+        <img src="../../assets/pic1.png">
+        <div class="pan1">fdfd</div>
+        <div class="pan2">dfdfd</div>
       </div>
-      <div class='building_group' v-if="builds.length > 0">
-        <div class='building_item' v-for='(item,index) in builds' :key="item.id" @click='goDetail(item, index)'>
-          <div class='building_picture'>
-            <!-- <img v-bind:src="item.listpicwechat" class="build_bg"> -->
-            <img v-if="item.bannerpicpc" v-bind:src="item.bannerpicpc | imgUrl"> 
-            <img  v-else src="../../assets/pic_default.png" >
-            <div class='price_bg'>
-              <span class="unitprice">约  <span class="price">{{item.unitpriceshow}}</span> 元/㎡</span>
-            </div>
-          </div>
-          <div class='building_name'>
-            <span class='name'>{{item.projname}}</span>
-            <em class='icon_collect' :class="item.attentionFlg ? 'active' : ''" @click="toggleFollow($event, item,index)"></em>
-          </div>
-          <div class='address'>{{item.projectaddress}}</div>
-          <div class='build-tag'>
-            <label v-for='(type, index) in item.salepoint' :key="index">{{type}}</label>
-          </div>
-        </div>
+      <div class="haopan_div">
+        <img src="../../assets/pic1.png">
+        <div class="pan1">fdfd</div>
+        <div class="pan2">dfdfd</div>
       </div>
-    </section>
-    <div class='seperate_line'></div>
-    <section class="service">
-      <div class="service_item">
-         <div class="official"></div>
-         <div class="text">官方直营</div>
-         <div class="text">品牌权威</div>
+      <div class="haopan_div">
+        <img src="../../assets/pic1.png">
+        <div class="pan1">fdfd</div>
+        <div class="pan2">dfdfd</div>
       </div>
-      <div class="service_item">
-         <div class="online"></div>
-         <div class="text">随时随地</div>
-         <div class="text">在线选房</div>
+      <div class="haopan_div">
+        <img src="../../assets/pic1.png">
+        <div class="pan1">fdfd</div>
+        <div class="pan2">dfdfd</div>
       </div>
-      <div class="service_item">
-         <div class="professional"></div>
-         <div class="text">专业服务</div>
-         <div class="text">品质放心</div>
-      </div>
-    </section>
-    <div class='seperate_line'></div>
-    <section class="life">
-      <div class="title">
-        <span>美好生活</span>
-        <span class="title-text">绿城筑造</span>
-      </div>
-      <div class="detail">筑造魅力建筑，安放美好生活，绿城以一个个园区美好生活样本，搭建飘落人间的天堂</div>
-      <div class="pictures">
-        <div class="child"></div>
-        <div class="young"></div>
-        <div class="old"></div>
-        <div class="neighbor"></div>
-      </div>
-    </section>
-    <div class='seperate_line'></div>
-    <section class="quality">
-      <div class="title">
-        <span>美好生活</span>
-        <span class="title-text">绿城品质</span>
-      </div>
-      <div class="detail">
-        真诚<span class="dot">.</span>
-        善意<span class="dot">.</span>
-        精致<span class="dot">.</span>
-        完美
-      </div>
-      <mt-swipe :auto="5000" :show-indicators="true">
-        <mt-swipe-item>
-           <img src="../../assets/home/motto01.jpg"  />
-        </mt-swipe-item>
-        <mt-swipe-item>
-          <img src="../../assets/home/motto02.jpg" />
-        </mt-swipe-item>
-        <mt-swipe-item>
-          <img src="../../assets/home/motto03.jpg" />
-        </mt-swipe-item>
-        <mt-swipe-item>
-          <img src="../../assets/home/motto04.jpg" />
-        </mt-swipe-item>
-        <mt-swipe-item>
-          <img src="../../assets/home/motto05.jpg" />
-        </mt-swipe-item>
-        <!-- <mt-swipe-item>
-          <img src="../../assets/home/motto06.jpg" />
-        </mt-swipe-item> -->
-      </mt-swipe>
-    </section>
-    <!-- <section class="empty_panel"></section> -->
+    </div>
+    <div class='content no_margin'>
+      <my-banner height="0.955rem" width="3.75rem" />
+    </div>
+    <my-title name="房产资讯" />
+    <div class="home_new">
+      <my-information />
+    </div>
+    <div style="height: 3rem;"></div>
   </div>
 </template>
-
 <script>
 import { MessageBox, Swipe, SwipeItem, Toast } from 'mint-ui';
 import wx from 'weixin-js-sdk';
 import util  from '../../config/util';
+import Banner  from '../../components/banner/banner.vue';
+import Title  from '../../components/title/title.vue';
+import Scroll  from '../../components/scroll/scroll.vue';
+import Information  from '../../components/information/information.vue';
+import Zixun  from '../../components/zixun/zixun.vue';
+import Search  from '../../components/search/search.vue';
 export default {
   mixins: [util],
   data(){
     return {
       city:'',
-      cityId:'',
+   remyId:'',
       cities:[],
       isWechat: true,
-      bocurrentcity:false,
       builds: [
       //   {
       //   projguid: '97090310075553455',
@@ -376,27 +299,6 @@ export default {
           }
          }
       },
-    // goPage(type,link,buildingId){
-    //   let _this = this;
-    //   let scrollTop = sessionStorage.scrolltop ? sessionStorage.scrolltop : 0;
-    //   switch(type){
-    //       case "0":
-    //        break;
-    //       case "1":
-    //         _this.$router.push("/buildingdetail/building/"+link + '/' + scrollTop + '/' + buildingId);
-    //        break;
-    //       case "2":
-    //         _this.$router.push("/newsDetail/"+link);
-    //        break;
-    //       case "3":
-    //         location.href= 'http://' + link;
-    //        break;
-    //     }
-    // },
-    // goDetail(id){
-    //   $('#main').scrollTop(0);
-    //   this.$router.push('/newsDetail/'+id);
-    // },
 
     goDetail(item, index){
 
@@ -678,34 +580,16 @@ export default {
       this.getCoverList();
       this.getNewList();
     },
-    // getCoverList(){
-    //   let param = {
-    //     cityId:this.cityId
-    //   }
-    //   this.common.request.post('/home/coverList',param).then(data => {
-    //     this.coverList = data;
-    //   })
-    // },
-  //   getNewList(){
-  //     if(this.cityId){
-  //       let param = {
-  //         cityId:this.cityId
-  //       }
-  //       this.common.request.post('/home/getNewsBanner',param).then(data => {
-  //         $.each(data,function(index,item){
-  //           if(item.summary){
-  //             item.newdesc = $.parseHTML(item.summary)[0].data;
-  //           }
-  //         })
-  //         this.newsList = data;
-  //       })
-  //     }
-
-  //   }
    },
   components:{
     'mt-swipe':Swipe,
-    'mt-swipe-item':SwipeItem
+    'mt-swipe-item':SwipeItem,
+    'my-banner':Banner,
+    'my-title':Title,
+    'my-scroll':Scroll,
+    'my-information':Information,
+    'my-zixun': Zixun,
+    'my-search':Search
   }
 }
 </script>

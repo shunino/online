@@ -1,207 +1,52 @@
-.calculator_wrap{
-	padding-bottom: 0.48rem;
+.calculator{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 999;
+}
+.mint-header{
+    /* border-bottom: 1px solid #EAEBED; */
+    color: #000;
+    background-color: #fff;
+}
+h1 {
+    margin: .67em 0;
+}
+label{
+    font-weight: 100;
+    font-size: .12rem;
+}
+.mintui{
+    font-size: .14rem;
+}
+.mint-navbar {
+    border-bottom: 1px solid #EAEBED;
+}
+.mint-navbar a.mint-tab-item {
+    color: #989CA8;
+}
+.mint-tab-item-label {
+    font-size: .14rem;
 }
 
-.calculator_bar{
-	display: flex;
-}
-
-.type_group{
-	flex: 1;
-	height: 0.35rem;
+.mint-navbar .mint-tab-item.is-selected {
+    border-bottom: none;
+    color: #333333;
+	text-decoration: none;
 	position: relative;
 }
 
-.type_group input[type="radio"]{
-	-webkit-appearance: none;
-  width: calc(100%);
-  height: calc(100%);
-  margin: 0;
-  border-radius: 0;
-  outline: none;
-  border:0;
-}
-
-.type_group label {
-  position: absolute;
-  width: calc(100%);
-  height: 100%;
-  left: 0;
-  margin: 0;
-  text-align: center;
-  font-weight: 200;
-  color: #fff;
-  top: 0;
-  line-height: 0.36rem;
-}
-
-.type_group input[type=radio]:checked+label{
-  background: #fff;
-  color: #00B96D;
-}
-
-.result_wrap{
-	height: 2.25rem;
-	background: url(../../assets/calculator.jpg);
-	background-size: 100%;
-	overflow: hidden;	
-	background-size: cover;
-}
-
-.result_wrap .calculator_bar{
-	width: 2rem;
-	margin:0.12rem auto 0.15rem auto;
-	border-radius: 5px;
-}
-
-.calculator_bar{
-	background: none;
-	border:1px solid #fff;
-}
-
-.calculator_bar .mint-tab-item{
-	padding: 0.1rem 0;
-	color: #fff;
-}
-
-.calculator_bar .mint-tab-item.is-selected{
-	border-bottom: 0;
-  color: #40bbbe;
-  background: #fff;
-  margin-bottom: 0;
-}
-
-a:hover, a:focus{
-	outline: none;
-	text-decoration:none;
-}
-
-.pay_month{
-	height: 0.88rem;
-	width: 2.35rem;
-	background: url(../../assets/pay_month_bg.png) no-repeat center;
-	margin: 0 auto;
-	text-align: center;
-	color:#f56941;
-	background-size: cover;
-}
-
-.pay_month .title{
-	font-size: 0.15rem;
-	padding-top: 0.25rem;
-	line-height: 0.23rem;
-}
-
-.pay_month .pay_num{
-	font-weight: 700;
-	padding-top: 0.05rem;
-}
-
-.price_wrap{
-	display: flex;
-	color: #fff;
-	padding-top: 0.2rem;
-}
-
-.price_wrap .pay{
-	flex: 1;
-	text-align: center;
-}
-
-.item_group{
-	margin:0 0.15rem;
-}
-.item_group .item {
-	overflow: hidden;
-	border-bottom: 1px solid #dcdcdc;
-	padding:0.12rem 0;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: flex;
-	align-items: center;
-}
-
-.item_group .item:last-child{
-	border-bottom: 0;
-}
-
-.item_group .item .item_title{
-	color: #818181;
-}
-
-.item_group .item .item_desc{
-	text-align: right;
-	color: #252525;
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	flex: 1;
-}
-.item_group .item .item_desc span.text-right{
-	padding-left: 10px;
-}
-
-.item_group .item .item_desc select{
-	border: none;
-	outline: none;
-	appearance:none;
-	-webkit-appearance:none;
-	background: #fff url(../../assets/arrow-right.png) no-repeat;
-	background-size: 20px 20px;
-	background-position:  105% center;
-	padding-right: 0.2rem;
-}
-
-.item_group .item .item_desc input{
-	text-align: right;
-	width: 100%;
-	border:0;
-	padding-right: 15px;
-}
-.select_mask {
+a.mint-tab-item.is-selected:before {
+    content: '';
+    width: .4rem;
+    height: 2px;
+    background: #25B07E;
+    display: block;
+    bottom: 2px;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.5);
-}
-.jjr_picker{
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-	background: white;
-	z-index: 999;
-}
-.toolbar{
-	padding: 5px;
-	font-size: .2rem;
-	border-bottom: 1px solid #D1D1D1;
-	height: .4rem;
-}
-.icon-arrow-right:before{
-	font-size: 12px;
-}
-.item_group.benxi{
-	border-bottom: 1px solid #dcdcdc;
-}
-a.btn.btn-register{
-  background: #00B96D;
-  border:1px solid #00B96D;
-  color: #fff;
-  padding: 0;
-  height: 40px;
-  line-height: 40px;
-  width: 100%;
-  margin-right: 0.1rem;
-}
-a.btn.btn-register:active{
-  background: #00B96D;
-  color: #fff;
-}
-.pay_num{
-	width: 120px;
-	margin: 0 auto;
-	height: 30px;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
+    left: 50%;
+    margin-left: -0.2rem;
 }

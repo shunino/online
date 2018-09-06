@@ -1,0 +1,31 @@
+.footer {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    line-height: 0.5rem;
+    /* border-top: 1px solid #f7f7f7; */
+    display: none;
+    padding-top: .1rem;
+    box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.03);
+  }
+.bottom-btn{
+    width: 1.24rem;
+    height: .42rem;
+    display: inline-block;
+    line-height: .42rem;
+    background: #25B07E;
+    box-shadow: 0 6px 18px 0 rgba(37,176,126,0.35);
+    border-radius: 8px;
+    font-weight: 100;
+    font-size: .15rem;
+    color: #fff;
+  }
+  
+  .bottom-left{
+    flex: 2;
+    background: #fff;
+    color: #C6CAD3;
+    font-size: .12rem;
+  }

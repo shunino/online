@@ -9,7 +9,7 @@
 
 .build-detail .detail-banner {
   overflow: hidden;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f4f4f4;
 }
 
 .build-detail .detail-banner .main-pic-wrap {
@@ -22,7 +22,18 @@
   width: 100%;
   height: 2.75rem;
 }
-
+.build-detail .detail-banner .main-pic-num {
+  position: absolute;
+  right: 0.18rem;
+  bottom: 0.2rem;
+  background: #666;
+  color: #fff;
+  font-size: 0.12rem;
+  width: 0.28rem;
+  height: 0.175rem;
+  line-height: 0.175rem;
+  text-align: center;
+}
 .build-detail .detail-banner .main-pic-wrap .photos-pic {
   font-size: 0.14rem;
   background: rgba(0, 0, 0, 0.4);
@@ -47,12 +58,30 @@
 
 #whjjr {
   padding-top: 0.2rem;
-  border-top: 4px solid #f7f7f7;
+  /* border-top: 4px solid #f7f7f7; */
   margin-top: 0;
 }
 
 .build-detail .detail-banner .estate-detail {
   padding: 0 0.22rem;
+}
+
+.build-detail .detail-banner .estate-detail .tips_box span {
+  font-size: 0.12rem;
+  padding: 1px 5px;
+  line-height: 0.2rem;
+  border-radius: 3px;
+}
+
+.build-detail .detail-banner .estate-detail .tips_box span.tips_left {
+  color: #6BA686;
+  background: #F0F6F2;
+  border: 1px solid #F0F6F2;
+}
+
+.build-detail .detail-banner .estate-detail .tips_box span.tips_right {
+  color: #C2C2C2 ;
+  border: 1px solid #C2C2C2 ;
 }
 
 .build-detail .detail-banner .look-photos {
@@ -76,14 +105,14 @@
 }
 
 .build-detail .detail-banner .price span {
-  font-size: 0.15rem;
-  color: #ff8518;
+  /* font-size: 0.15rem; */
+  color: #2DB383;
 }
 
-.build-detail .detail-banner .price span.bold {
+/* .build-detail .detail-banner .price span.bold {
   font-size: 0.22rem;
   font-weight: 700;
-}
+} */
 
 .build-detail .detail-banner .price .fa-building {
   color: #37ab6a;
@@ -127,14 +156,19 @@
 }
 
 .build-detail .detail-banner .estate-detail .estate-header .name {
-  padding: 0.15rem 0;
-  border-bottom: 1px solid #f7f7f7;
+  padding: 0.15rem 0 0;
+  /* border-bottom: 1px solid #f7f7f7; */
   position: relative;
   width: 100%;
   padding-right: 0.8rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.build-detail .detail-banner .estate-detail .estate-header .name .tips_box{
+  font-size: 0.12rem;
+  line-height: 0.4rem;
 }
 
 .build-detail .detail-banner .estate-detail .estate-header .attention_box {
@@ -193,21 +227,58 @@
 }
 
 .build-detail .detail-banner .estate-detail .estate-info {
-  margin: 0.25rem 0;
+  margin: 0;
 }
 
 .build-detail .detail-banner .estate-detail .estate-info .info-item {
-  line-height: 0.5rem;
+  line-height: 0.4rem;
   font-size: 0.16rem;
   position: relative;
+  display: flex;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info .info-item .info-item-title {
+  color: #000;
+  flex: 4;
+  font-weight: 900;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info .info-item .info-item-content {
+  flex: 24;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info .info-item .info-item-content.bold {
+  font-weight: 900;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info .info-item .info-item-content .info-item-content-tag {
+  color: #FE5A4C;
+  background: #F6E4E0;
+  font-size: 0.12rem;
+  margin-right: 0.1rem;
+  border-radius: 3px;
+  width: 0.28rem;
+  height: 0.25rem;
+  display: inline-block;
+  line-height: 0.25rem;
+  text-align: center;
+}
+
+.build-detail .detail-banner .estate-detail .estate-info .info-item .info-item-arrows {
+  float: right;
+  flex: 1;
+  color: #989CA8;
 }
 
 .build-detail .detail-banner .estate-detail .estate-info .info-item .calculator {
   position: absolute;
   right: 0;
   top: 10px;
-  width: 0.25rem;
-  height: 0.25rem;
+  width: 0.16rem;
+  height: 0.2rem;
 }
 
 .build-detail .detail-banner .estate-detail .estate-tel a {
@@ -255,10 +326,41 @@
 }
 
 .build-detail .container .bundle {
-  padding-bottom: 0.2rem;
-  border-bottom: 4px solid #f7f7f7;
+  /* padding-bottom: 0.2rem; */
+  border-bottom: 1px solid #f7f7f7;
   margin-top: 0.2rem;
   font-size: 0.12rem;
+}
+
+.build-detail .container .bundle .content-item {
+  margin-right: .1rem
+}
+
+.build-detail .container .bundle .content-item:last-child {
+  margin-right: 0
+}
+
+.build-detail .container .bundle .content-item .pic-wrap{
+  width: 2.47rem;
+  height: 1.39rem;
+}
+
+.build-detail .container .bundle .content-item .text-wrap{
+  font-size: .12rem;
+  color: #333;
+}
+
+.build-detail .container .bundle .content-item .text-wrap b{
+  font-weight: bold;
+  font-size: .18rem;
+}
+
+.build-detail .container .bundle .content-item .tags-wrap .tag-item{
+  color: #25B07E;
+  border: 1px solid #25b07e;
+  border-radius: 2px;
+  padding: 0.02rem;
+  margin-right: .1rem;
 }
 
 .build-detail .container .bundle:last-child {
@@ -267,22 +369,33 @@
 
 .build-detail .container p.d-title {
   line-height: 0.18rem;
-  font-size: 0.15rem;
-  position: relative;
-  color: #00B573;
-  margin-bottom: 0.22rem;
+    font-size: 0.19rem;
+    position: relative;
+    /* color: #00B573; */
+    margin-bottom: 0.22rem;
+    font-weight: 900;
 }
 
 .build-detail .container p.d-title span {
   margin-left: 0.2rem;
 }
 
+.build-detail .container p.d-title .more {
+  float: right;
+  font-weight: 100;
+  font-size: 0.12rem;
+  margin-right: 0.2rem;
+}
+
 .build-detail .detail-content {
   padding: 0 0.2rem;
+  border-bottom: 1px solid #f4f4f5;
 }
 
 .build-detail .detail-content h4 {
   color: #111;
+  font-size: 0.16rem;
+  line-height: 0.3rem;
 }
 
 .build-detail .detail-content .detail_brightspot {
@@ -304,13 +417,14 @@
 }
 
 .build-detail .detail-content .brightSpotSummary {
-  color: #666;
+  color: #989CA8;
   margin-bottom: 0.1rem;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  line-height: 0.18rem;
 }
 
 .build-detail .container p.d-title .more {
@@ -377,8 +491,8 @@
 }
 
 .build-detail .container .agent img {
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 0.36rem;
+  height: 0.36rem;
   border-radius: 50%;
 }
 
@@ -386,6 +500,7 @@
   font-size: 0.14rem;
   padding-top: 0.14rem;
 }
+
 
 .build-detail .container .agent button {
   line-height: 0.25rem;
@@ -486,8 +601,8 @@
 }
 
 .build-detail .container .house img {
-  width: calc(96%);
-  height: .85rem;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -591,6 +706,8 @@
   line-height: 0.5rem;
   /* border-top: 1px solid #f7f7f7; */
   display: none;
+  padding-top: .1rem;
+  box-shadow: inset 0 2px 3px 0 rgba(0,0,0,0.03);
 }
 
 .build-detail .footer.is-block {
@@ -599,7 +716,7 @@
 
 
 .build-detail .footer div {
-  background: #00B573;
+  /* background: #00B573; */
   color: #fff;
   /* border-right: 1px solid #fff; */
   font-size: 0.18rem;
@@ -776,6 +893,158 @@ a:active {
   background: #fff;
 }
 
+.facility .facility-item{
+  display: flex;
+  padding: 0 0.2rem;
+  margin: 0.1rem 0;
+}
+
+.facility .facility-item .facility-item-pic{
+  flex: 1;
+}
+
+.facility .facility-item .facility-item-pic img{
+  width: 0.45rem
+  /* width: 100%; */
+}
+
+.facility .facility-item .facility-item-content{
+  flex: 7;
+  padding: 0 0.2rem;
+  line-height: 0.45rem;
+  font-size: 0.16rem;
+}
+
+.facility .facility-item .facility-item-content .title{
+  color: #333333;
+}
+
+.facility .facility-item .facility-item-content .details{
+  color: #3E0000 ;
+  position: relative;
+  margin-left: 0.1rem;
+}
+
+.facility .facility-item .facility-item-content .details::before{
+  content: '';
+  display: inline-block;
+  width: 0.02rem;
+  height: 0.02rem;
+  background: #333333;
+  position: absolute;
+  top: 0.1rem;
+  left: -0.08rem;
+}
+
+.tag-wrap{
+  padding: 0 0.2rem 0.2rem;
+  border-bottom: 1px solid #f4f4f5;
+}
+ 
+.tag-wrap .tag{
+  font-size: 0.12rem;
+  padding: 1px 5px;
+  line-height: 0.2rem;
+  border-radius: 3px;
+  color: #6BA686;
+  background: #F0F6F2;
+  border: 1px solid #F0F6F2;
+  margin-right: 0.1rem;
+}
+
+.agent-content-item{
+  padding: 0.1rem 0.2rem;
+  overflow: hidden;
+}
+
+.agent-content-item .agent-content-item-pic{
+  float: left;
+}
+
+.agent-content-item .agent-content-item-name{
+  height: 0.36rem;
+    margin-left: 0.1rem;
+    float: left;
+}
+
+.agent-content-item .agent-content-item-name .name{
+  line-height: 0.18rem;
+  color: #373C43;
+  font-size: 0.14rem;
+  font-weight: 600;
+}
+
+.agent-content-item .agent-content-item-name .grade{
+  font-size: 0.14rem;
+    line-height: 0.18rem;
+    color: #C8AB57;
+}
+
+.agent-content-item .agent-content-item-tel{
+  width: 0.36rem;
+  height: 0.36rem;
+  float: right;
+  background: rgba(37,176,126,0.05);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.46rem;
+}
+
+.agent-content-item .agent-content-item-tel img{
+  width: 0.18rem!important;
+  height: 0.18rem!important;
+}
+
+.agent-content .agent-content-btn{
+  padding: 0 0.2rem
+}
+
+ .agent-content-btn-text{
+  width: 100%;
+  height: 0.48rem;
+  background: rgba(37,176,126,0.05);
+  color: #6BA686;
+  line-height: 0.48rem;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 0.14rem;
+}
+
+.tab-wrap{
+  overflow: hidden;
+  display: flex;
+}
+
+.tab-wrap li.tab{
+    flex: 1;
+    text-align: center;
+    font-size: .15rem;
+    line-height: .5rem;
+    color: #333;
+}
+
+.tab-wrap li.tab.active{
+  color: #25B07E
+}
+
+.bottom-btn{
+  width: 1.24rem;
+  height: .42rem;
+  display: inline-block;
+  line-height: .42rem;
+  background: #25B07E;
+  box-shadow: 0 6px 18px 0 rgba(37,176,126,0.35);
+  border-radius: 8px;
+  font-weight: 100;
+  font-size: .15rem;
+}
+
+.bottom-left{
+  flex: 2;
+  background: #fff;
+  color: #C6CAD3;
+  font-size: .12rem;
+}
 
 /*iPhoneX的适配*/
 @media only screen and (device-width: 375px) and (device-height: 812px) {
@@ -799,6 +1068,7 @@ a:active {
     padding-bottom: 0.34rem !important;
     /* border-top: 1px solid #f7f7f7; */
     display: none;
+    
   }
 
 }

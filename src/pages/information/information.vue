@@ -49,7 +49,7 @@
 	import { Loadmore } from 'mint-ui';
 	import util  from '../../config/util';
 	export default {
-		name: "news",
+		name: "newss",
 	    mixins: [util],
 		data() {
 			return {
