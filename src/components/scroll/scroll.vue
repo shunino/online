@@ -18,7 +18,7 @@
         </div>
 
         <div class='build-tag'>
-          <label v-for='(type, index) in item.salepoint' :key="index">{{type}}</label>
+          <span class="my_label" v-for='(type, index) in item.salepoint' :key="index">{{type}}</span>
         </div>
       </div>
       <div class='building_item_more'>

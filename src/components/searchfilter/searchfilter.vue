@@ -18,12 +18,6 @@
         <span class="search_tag" @click="searchTag($event)"><span class="tag_txt">dfdfd</span><img v-on:click.stop="delTag($event)" class="search_dell" src="../../assets/search_dell.png" ></span>
       </div>
     </div>
-    <div class="hot">
-      <div class="title">热门推荐</div>
-      <div class="hot_list">
-        <span class="search_tag" @click="searchTag($event)"><span class="tag_txt">dfdfd</span></span>
-      </div>
-    </div>
   </div>
   <my-filter :showFilter="showFilter" v-on:filterStatusChange="filterStatusChange" :data="filterData"></my-filter>
 </div>
@@ -49,11 +43,19 @@ import Filter from '../../components/filter/filter.vue';
           $('.search_recommend').hide();
           $('.search_pass').show();
           $('.searchfilter_box .my_search .mint-search').css({width:'2.80rem'});
+          $('.searchfilter_box .my_search .city').css({background:'#fff'});
+          $('.searchfilter_box .my_search .mint-searchbar-inner').css({background:'#fff'});
+          $('.searchfilter_box .my_search .mint-searchbar-inner input').css({background:'#fff'});
+          $('.searchfilter_box .filter').show();
         }else{
-          $('.searchfilter_box .my_search .mint-search').css({width:'3.66rem'});
+          $('.searchfilter_box .my_search .mint-search').css({width:'2.934xrem'});
           $('.search_recommend').show();
           $('.search_tag').show();
           $('.search_pass').hide();
+          $('.searchfilter_box .my_search .city').css({background:'#F4F4F5'});
+          $('.searchfilter_box .my_search .mint-searchbar-inner').css({background:'#F4F4F5'});
+          $('.searchfilter_box .my_search .mint-searchbar-inner input').css({background:'#F4F4F5'});
+          $('.searchfilter_box .filter').hide();
         }  
       },
       search:function(val){

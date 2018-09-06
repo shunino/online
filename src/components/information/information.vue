@@ -1,48 +1,12 @@
 <template>
 	<div class="news">
 		<div class='item_group'>
-			<div class="item" @click='goNewsDetail(item.id);'>	
+			<div class="item" v-for="item in mydata" @click='goPage(item.url)'>	
 					<div class="item_left">
-							<img src="../../assets/list-default.png" width='100%' height="100%">
+							<img :src="item.image" width='100%' height="100%">
 					</div>
         			<div class="item_right">
-						<div class='name'>4343434</div>
-						<div class='time'>4342342</div>
-					</div>
-			</div>
-			<div class="item" @click='goNewsDetail(item.id);'>	
-					<div class="item_left">
-							<img src="../../assets/list-default.png" width='100%' height="100%">
-					</div>
-        			<div class="item_right">
-						<div class='name'>4343434</div>
-						<div class='time'>4342342</div>
-					</div>
-			</div>
-			<div class="item" @click='goNewsDetail(item.id);'>	
-					<div class="item_left">
-							<img src="../../assets/list-default.png" width='100%' height="100%">
-					</div>
-        			<div class="item_right">
-						<div class='name'>4343434</div>
-						<div class='time'>4342342</div>
-					</div>
-			</div>
-			<div class="item" @click='goNewsDetail(item.id);'>	
-					<div class="item_left">
-							<img src="../../assets/list-default.png" width='100%' height="100%">
-					</div>
-        			<div class="item_right">
-						<div class='name'>4343434</div>
-						<div class='time'>4342342</div>
-					</div>
-			</div>
-			<div class="item" @click='goNewsDetail(item.id);'>	
-					<div class="item_left">
-							<img src="../../assets/list-default.png" width='100%' height="100%">
-					</div>
-        			<div class="item_right">
-						<div class='name'>4343434</div>
+						<div class='name'>{{item.activityName}}</div>
 						<div class='time'>4342342</div>
 					</div>
 			</div>
@@ -51,37 +15,32 @@
 </template>
 
 <script>
-	// import { Swipe, SwipeItem } from 'mint-ui';
-	import { Loadmore } from 'mint-ui';
 	import util  from '../../config/util';
 	export default {
 		name: "news",
 	    mixins: [util],
+	    data(){
+	      return {
+	        mydata:[]
+	      }
+	    },
 		created() {
-			document.title = "资讯";
+			this.getList();
 		},
-		
 		methods: {
-			updateTitle(){
-				document.title = "资讯";
-			},
-			updateParems(){
-			
-			},
-			getList() {
-				
-			},
-			goNewsDetail(newsId) {
-			
-			},
-			loadBottom(){
-				
-			}
-		},
-		components: {
-			'load-more': Loadmore,
-			// 'mt-swipe':Swipe,
-			// 'mt-swipe-item':SwipeItem
+			getList:function(){
+		          let self = this;
+		          let params = {
+		            pageLimit:4
+		          }
+		          this.common.request.post('/activity/list', params).then(data => {
+		                  self.mydata = data; 
+		          }); 
+		      },
+		   	goPage:function(link){
+		   		if(link=='') return;
+            	window.location = link;
+		   	}
 		}
 	}
 </script>

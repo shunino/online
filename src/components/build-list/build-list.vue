@@ -13,7 +13,7 @@
         </div>
         <div class="build-detail2">
         	<div class="address">
-            <span>{{item.projectaddress|adressfilter}}</span>
+            {{item.projectaddress|adressfilter}}
         	</div>
         	<div class="price-wrap">
         	  <span style="padding-right:0.15rem;">
@@ -26,12 +26,6 @@
         <div class="build-tag">
         	<label v-for="n in item.typeAndColor" v-if='n.buildingType != null && n.buildingType !=""'>{{n.buildingType}}</label>
         </div>
-        <!-- <div class="list-btn" style="display: flex;">
-          <a  v-for="b in btns" style="flex: 1;" class="text-center clearfix" @click="btnClick($event,b, item)" :href="b == 'contact' ? 'tel:' + item.contactphone : ''"> 
-            <span style="position: relative;top: 5px;color:#fff;">{{b == 'contact' ? '联系案场' : b == 'appoint' ? '我要预约' : '我要订购'}}</span>
-          </a>
-          <div class="clearfix"></div>
-        </div> -->
       </div>
     </div>
      <div id="noData" style="width: 100%;height: 4rem;z-index: 999;display: none;">

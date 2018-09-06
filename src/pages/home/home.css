@@ -461,3 +461,29 @@ font-size: 0.09rem;
 color: #5D5D5D;
 line-height: 0.16rem;
 }
+
+.home .no_margin{
+  width:100%;
+  margin-top: 0.24rem;
+  text-align: center;
+  margin-left: 0.14rem;
+  height: 0.955rem;
+  /* margin-top: 0.4rem; */
+}
+ .home .no_margin .mint-swipe-indicators{
+  bottom: 0.03rem !important;
+ }
+  .home .no_margin .mint-swipe-indicators .is-active {
+    background: #0EB375 !important;
+  }
+  .home .no_margin .mint-swipe-indicator {
+    width: 40px !important;
+    height: 2px !important;
+    background: #F4F4F5 !important;
+    opacity: 1;
+    border-radius: 0px !important;
+    margin: 0 3px;
+  }
+  .home .no_margin .mint-swipe-indicator.is-active{
+    opacity: 1 !important;
+  }

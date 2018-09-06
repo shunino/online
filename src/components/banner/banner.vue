@@ -32,7 +32,9 @@
       //$('')
     },
     methods: {
-      goPage(type,link,buildingId){
+      goPage(link){
+            if(link=='') return;
+            window.location = link;
         }
     },
     components:{

@@ -4,10 +4,7 @@
    <div class='zixun'>
        <div class="zixun_lunbo">
           <dl class="text_list">
-            <dd>颠三倒四的法规规定共商国是个歌手歌手歌手是分身乏术分身乏术v 的分身乏术的分身乏术服务</dd>
-            <dd>谁都是吃吃吃</dd>
-            <dd>呜呜呜单位</dd>
-            <dd>恶毒的时代</dd>
+            <dd v-for="item in mydata">{{item.content}}</dd>
           </dl>
           <span class="zixun_more">更多</span>
        </div>
@@ -19,7 +16,13 @@ import { Swipe, SwipeItem } from 'mint-ui';
   export default {
     name: 'zixun',
     props: ['name','link'],
+    data(){
+      return {
+        mydata:[]
+      }
+    },
     created(){
+        this.getList();
         setInterval(this.goUp,3000);
     },
     methods: {
@@ -29,6 +32,15 @@ import { Swipe, SwipeItem } from 'mint-ui';
             $(".text_list").css({top:0});
             $(".text_list dd:first").insertAfter(".text_list dd:last")
         });
+      },
+      getList:function(){
+          let self = this;
+          let params = {
+            pageLimit:4
+          }
+          this.common.request.post('/home/news/list', params).then(data => {
+                  self.mydata = data; 
+          }); 
       }
     }
   }

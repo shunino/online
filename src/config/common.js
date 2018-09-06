@@ -24,29 +24,30 @@ function ajaxRequest(url, data, type){
       }
     },
     success:(response) => {
-      if(response.result){
-        deffered.resolve(response.objValue);
+      if(response.code==0){
+        deffered.resolve(response.data);
       }else{
       	// if($(".mint-loadmore-bottom") && response.value.indexOf("没有查找到楼盘")>-1){
       	// 	$(".mint-loadmore-bottom").hide();
       	// }
-        deffered.reject(response.value);
+        deffered.reject(response.msg);
       }
       setTimeout(function(){
       	Indicator.close();
       },1000);
     },
     error:(e) => {
-      deffered.reject(e.status);
+      deffered.reject(e.msg);
       Indicator.close();
     }
   });
   deffered.fail(e => {
-    handleError(e);
+    //handleError(e);
   });
   return deffered.promise();
 }
 function handleError(msg){
+  console.log(msg);
   if(msg.toString().indexOf('此账户在其他设备登录过') >-1){
     localStorage.clear();
   }

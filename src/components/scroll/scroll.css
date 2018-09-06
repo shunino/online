@@ -91,10 +91,10 @@ line-height: 0.19rem;
   white-space: nowrap;
   width: 1.69rem;
   font-family: PingFangSC-Regular;
-font-size: 0.12rem;
-color: #989CA8;
-line-height: 0.16rem;
-margin-top:0.04rem;
+  font-size: 0.12rem;
+  color: #989CA8;
+  line-height: 0.16rem;
+  margin-top:0.04rem;
 }
 
 .building_group .building_item .build-tag{
@@ -104,18 +104,24 @@ margin-top:0.04rem;
   white-space: nowrap;
 }
 
-.building_group .building_item .build-tag label{
+.building_group .building_item .build-tag .my_label{
+  background: rgba(107,166,134,0.10);
+border-radius: 4px;
+display: inline-block;
+height: 0.15rem;
   font-family: PingFangSC-Regular;
 font-size: 0.11rem;
 color: #6BA686;
 letter-spacing: 0;
-line-height: 0.11rem;
-height: 0.11rem;
 margin-left: 0.105rem;
-padding: 0.05rem;
-padding-left: 0rem;
+height: 0.15rem;
+min-width: 0.5rem;
+align-items: center;
+justify-content: center;
+  text-align: center;
+  line-height: 0.15rem;
 }
-.building_group .building_item .build-tag label:first-child{
+.building_group .building_item .build-tag .my_label:first-child{
  margin-left: 0px;
 }
 
