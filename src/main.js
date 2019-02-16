@@ -18,6 +18,7 @@ Vue.use(VueLazyload, {
   attempt: 1,
   listenEvents: [ 'scroll', 'mousewheel' ]
 });
+
 import { InfiniteScroll } from 'mint-ui';
 Vue.use(InfiniteScroll);
 Vue.use(VueKeepScrollPlugin); 
